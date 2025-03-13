@@ -1,0 +1,23 @@
+docker -v
+docker ps
+docker build .  // create a docker image command
+docker image ls
+docker run imageID   // for create a container
+docker run -p 3000:3000 c76db09c8378 npm run dev
+docker stop name
+docker run -d -p 3000:3000 c76db09c8378 npm run dev   // this is run on detuch mode
+docker rm name
+docker stop name
+docker ps -a // show details all docker
+docker run -d  --name "mywebapp"  -p 3001:3000 c76db09c8378
+
+// managing docker image
+
+docker build -t mywebapp:01 . /// Docker image build with Image name
+
+docker rmi multistage-first-2025:latest  // Docker image remove
+
+ docker run -d --rm --name "mywebpp" -p 3001:3000 mywebapp:2 npm run dev  // specific image run this code
+
+// Docker build in image pull and run then
+
