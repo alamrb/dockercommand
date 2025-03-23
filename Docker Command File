@@ -9,7 +9,7 @@ docker run -d -p 3000:3000 c76db09c8378 npm run dev   // this is run on detuch m
 docker rm name
 docker stop name
 docker ps -a // show details all docker
-docker run -d  --name "mywebapp"  -p 3001:3000 c76db09c8378
+docker run -d  --name "mywebapp"  -p 9000:9000 c76db09c8378
 
 // managing docker image
 
@@ -20,4 +20,21 @@ docker rmi multistage-first-2025:latest  // Docker image remove
  docker run -d --rm --name "mywebpp" -p 3001:3000 mywebapp:2 npm run dev  // specific image run this code
 
 // Docker build in image pull and run then
+
+
+docker logs -f cac-new-api
+docker compose up -d --build  // docer composer build command
+
+docker compose up -d --build
+
+docker compose ps
+docker compose logs -f
+
+
+sudo apt-get update
+sudo apt-get install docker-compose-plugin
+
+docker-compose config
+
+
 
